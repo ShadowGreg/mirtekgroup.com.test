@@ -15,4 +15,8 @@ public class DataContext : DbContext {
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) {
     }
+    
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+        optionsBuilder.UseNpgsql("Server=localhost;Database=MyDatabase;Trusted_Connection=True;");
+    }
 }

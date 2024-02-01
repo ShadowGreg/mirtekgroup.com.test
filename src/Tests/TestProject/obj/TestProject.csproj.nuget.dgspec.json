@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj": {}
+    "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj": {
+    "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\GrigoryAO\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\obj\\",
+        "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\DevExpress 22.1\\Components\\Offline Packages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GrigoryAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\shado\\Downloads": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,24 +65,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj": {
+    "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj",
+        "projectUniqueName": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj",
         "projectName": "RssParse",
-        "projectPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj",
-        "packagesPath": "C:\\Users\\GrigoryAO\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\obj\\",
+        "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\DevExpress 22.1\\Components\\Offline Packages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GrigoryAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,14 +93,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\shado\\Downloads": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj": {
-                "projectPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj"
+              "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj": {
+                "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Core\\Core\\Core.csproj"
               }
             }
           }
@@ -128,24 +140,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj": {
+    "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "C:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj",
-        "packagesPath": "C:\\Users\\GrigoryAO\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\obj\\",
+        "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\DevExpress 22.1\\Components\\Offline Packages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GrigoryAO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -154,14 +168,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\shado\\Downloads": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj": {
-                "projectPath": "C:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj"
+              "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj": {
+                "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj"
               }
             }
           }
@@ -213,7 +231,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
         }
       }
     }
