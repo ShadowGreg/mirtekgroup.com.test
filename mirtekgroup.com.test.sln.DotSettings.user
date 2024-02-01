@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1e6cad0e_002D0dee_002D48fc_002Da28f_002D32b23232c1f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ParseTo_OutputCorrectValues" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.ParseTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=92f1fcd6_002D5b83_002D493c_002Dad72_002Ddbe00278a1dc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ParseTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.ParseTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.RssReaderTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::RssParse.Tests.ParseTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::Entity.Tests.NewsItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
