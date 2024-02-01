@@ -394,21 +394,21 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Entity/1.0.0": {
+      "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/Entity.dll": {}
+          "bin/placeholder/Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entity.dll": {}
+          "bin/placeholder/Core.dll": {}
         }
       },
       "RssParse/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Entity": "1.0.0",
+          "Core": "1.0.0",
           "System.ServiceModel.Syndication": "8.0.0"
         },
         "compile": {
@@ -1039,10 +1039,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Entity/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
-      "path": "../../Core/Entity/Entity.csproj",
-      "msbuildProject": "../../Core/Entity/Entity.csproj"
+      "path": "../../Core/Core/Core.csproj",
+      "msbuildProject": "../../Core/Core/Core.csproj"
     },
     "RssParse/1.0.0": {
       "type": "project",

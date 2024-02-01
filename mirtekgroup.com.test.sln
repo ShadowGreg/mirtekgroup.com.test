@@ -6,11 +6,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssParse", "src\Services\Rs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "src\tests\TestProject\TestProject.csproj", "{21719BD4-37AB-4F8E-B36E-D847E45109A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "src\Core\Entity\Entity.csproj", "{D31467A5-6AFD-492A-9734-30E665D2BAC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core\Core.csproj", "{D31467A5-6AFD-492A-9734-30E665D2BAC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataBase\DataAccess\DataAccess.csproj", "{61F321DE-07A2-4C24-966D-C69AAB85FF92}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +36,5 @@ Global
 		{61F321DE-07A2-4C24-966D-C69AAB85FF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F321DE-07A2-4C24-966D-C69AAB85FF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61F321DE-07A2-4C24-966D-C69AAB85FF92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
