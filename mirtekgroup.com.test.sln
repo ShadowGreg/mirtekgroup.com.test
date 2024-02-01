@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "src\tests\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "src\Core\Entity\Entity.csproj", "{D31467A5-6AFD-492A-9734-30E665D2BAC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "src\DataBase\DataBase\DataBase.csproj", "{61F321DE-07A2-4C24-966D-C69AAB85FF92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataBase\DataAccess\DataAccess.csproj", "{61F321DE-07A2-4C24-966D-C69AAB85FF92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{D5855FD5-9DD1-4E75-9307-5EFFDE75F7EA}"
 EndProject
