@@ -48,7 +48,7 @@ public class ParseService {
 
     public async Task<List<NewsItem>> GetNewsTass() {
         try {
-            Task.Delay(34_400_000);
+            await Task.Delay(34_400_000);
             return await new TassHTMLRead(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {
@@ -59,7 +59,7 @@ public class ParseService {
 
     public async Task<List<NewsItem>> GetNewsFontanka() {
         try {
-            Task.Delay(34_400_000);
+            await Task.Delay(34_400_000);
             return await new FontankaHTMLRead(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {
@@ -70,7 +70,7 @@ public class ParseService {
 
     public async Task<List<NewsItem>> GetNewsRSS() {
         try {
-            Task.Delay(34_400_000);
+            await Task.Delay(34_400_000);
             return await new Parse(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {
