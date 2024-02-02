@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Services\HTMLParse\HTMLParse.csproj" />
       <ProjectReference Include="..\..\Services\RssParse\RssParse.csproj" />
     </ItemGroup>
 

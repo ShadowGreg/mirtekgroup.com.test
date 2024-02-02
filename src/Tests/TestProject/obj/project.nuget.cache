@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MuuSs5KHhMTTF95y3Sm9Jnj6Jf+dJI0FUIqIz23oP2DVrTH34RQibI6obPwlpDcZ4lIhawR6w2rqTYsOvyPLFQ==",
+  "dgSpecHash": "j0Dx3qUuNpDg8wfbScfHf+Nj6gRvWDAE/V0ke8uPjk61NYzYrPkl9ffmmKR79h2kxhgcq7cAQw/4oGW3ZYtmHw==",
   "success": true,
   "projectFilePath": "D:\\workspace\\mirtekgroup.com.test\\src\\tests\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shado\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\shado\\.nuget\\packages\\htmlagilitypack\\1.11.58\\htmlagilitypack.1.11.58.nupkg.sha512",
     "C:\\Users\\shado\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
     "C:\\Users\\shado\\.nuget\\packages\\microsoft.net.test.sdk\\17.7.1\\microsoft.net.test.sdk.17.7.1.nupkg.sha512",
     "C:\\Users\\shado\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

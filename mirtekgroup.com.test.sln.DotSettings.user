@@ -1,14 +1,16 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1e6cad0e_002D0dee_002D48fc_002Da28f_002D32b23232c1f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ParseTo_OutputCorrectValues" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15dcb684_002Db61b_002D43e3_002D8362_002Ddb5aa2002bc6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetDocument_ValidUrl_ReturnsHtmlDocument" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.ParseTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.HTMLReadTests.GetDocument_ValidUrl_ReturnsHtmlDocument&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=92f1fcd6_002D5b83_002D493c_002Dad72_002Ddbe00278a1dc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ParseTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41a98bd2_002De570_002D4e46_002Dac39_002Dce00a1c89236/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetDocument_ValidUrl_ReturnsHtmlDocument #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.ParseTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.RssReaderTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::RssParse.Tests.ParseTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::Entity.Tests.NewsItemTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.HTMLReadTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=57df3153_002Da229_002D4e06_002Da74e_002D1134e0e2a58d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetDocument_ValidUrl_ReturnsHtmlDocument #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21719BD4-37AB-4F8E-B36E-D847E45109A5::net7.0::TestProject.HTMLReadTests.GetDocument_ValidUrl_ReturnsHtmlDocument&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

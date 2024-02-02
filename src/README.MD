@@ -8,3 +8,16 @@
 
 
       Стек: C#, PostgreSQL 14, EF, Docker
+
+
+Работает с
+
+Канал cайта:
+https://www.fontanka.ru
+Адрес канала:
+http://www.fontanka.ru/fontanka.rss
+
+Канал cайта:
+https://tass.ru
+Адрес канала:
+http://tass.ru/rss/v2.xml?sections=MjU%3D

@@ -9,6 +9,7 @@ public class RssReaderTests {
 
     [SetUp]
     public void Setup() {
+        //string uri = "https://tass.ru/rss/v2.xml?sections=MjU%3D";
         string uri = "../../../../../../src/Tests/static/fontanka.rss";
         _rssReader = new RssReader(uri);
     }

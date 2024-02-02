@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "TestProject/1.0.0": {
         "dependencies": {
+          "HTMLParse": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.7.1",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
@@ -20,6 +21,14 @@
         }
       },
       "coverlet.collector/3.2.0": {},
+      "HtmlAgilityPack/1.11.58": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.58.0",
+            "fileVersion": "1.11.58.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.7.1": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -325,14 +334,24 @@
           }
         }
       },
-      "Entity/1.0.0": {
+      "Core/1.0.0": {
         "runtime": {
-          "Entity.dll": {}
+          "Core.dll": {}
+        }
+      },
+      "HTMLParse/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "HtmlAgilityPack": "1.11.58",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "HTMLParse.dll": {}
         }
       },
       "RssParse/1.0.0": {
         "dependencies": {
-          "Entity": "1.0.0",
+          "Core": "1.0.0",
           "System.ServiceModel.Syndication": "8.0.0"
         },
         "runtime": {
@@ -353,6 +372,13 @@
       "sha512": "sha512-xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
       "path": "coverlet.collector/3.2.0",
       "hashPath": "coverlet.collector.3.2.0.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.11.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/LzjIKoAWdyXOn6o+zJTN2qpNIwfaDWbSQ974pVRwnzHsUFohIOSILdtkPrSO6YC38MNj4nDbpr1RkVBDE1RWQ==",
+      "path": "htmlagilitypack/1.11.58",
+      "hashPath": "htmlagilitypack.1.11.58.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.7.1": {
       "type": "package",
@@ -445,7 +471,12 @@
       "path": "system.servicemodel.syndication/8.0.0",
       "hashPath": "system.servicemodel.syndication.8.0.0.nupkg.sha512"
     },
-    "Entity/1.0.0": {
+    "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HTMLParse/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

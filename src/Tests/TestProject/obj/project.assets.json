@@ -8,6 +8,19 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "HtmlAgilityPack/1.11.58": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.7.1": {
         "type": "package",
         "compile": {
@@ -404,6 +417,21 @@
           "bin/placeholder/Core.dll": {}
         }
       },
+      "HTMLParse/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "HtmlAgilityPack": "1.11.58",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/HTMLParse.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HTMLParse.dll": {}
+        }
+      },
       "RssParse/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -472,6 +500,54 @@
         "coverlet-icon.png",
         "coverlet.collector.3.2.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "HtmlAgilityPack/1.11.58": {
+      "sha512": "/LzjIKoAWdyXOn6o+zJTN2qpNIwfaDWbSQ974pVRwnzHsUFohIOSILdtkPrSO6YC38MNj4nDbpr1RkVBDE1RWQ==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.58",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.58.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
     "Microsoft.CodeCoverage/17.7.1": {
@@ -1044,6 +1120,11 @@
       "path": "../../Core/Core/Core.csproj",
       "msbuildProject": "../../Core/Core/Core.csproj"
     },
+    "HTMLParse/1.0.0": {
+      "type": "project",
+      "path": "../../Services/HTMLParse/HTMLParse.csproj",
+      "msbuildProject": "../../Services/HTMLParse/HTMLParse.csproj"
+    },
     "RssParse/1.0.0": {
       "type": "project",
       "path": "../../Services/RssParse/RssParse.csproj",
@@ -1052,6 +1133,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HTMLParse >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1099,6 +1181,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\HTMLParse\\HTMLParse.csproj": {
+              "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\HTMLParse\\HTMLParse.csproj"
+            },
             "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj": {
               "projectPath": "D:\\workspace\\mirtekgroup.com.test\\src\\Services\\RssParse\\RssParse.csproj"
             }
