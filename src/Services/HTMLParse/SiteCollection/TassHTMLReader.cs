@@ -1,12 +1,14 @@
 ﻿using System.Collections.Concurrent;
 using System.Text;
 using Entity;
+using Entity.Abstraction;
 using HtmlAgilityPack;
 using HTMLParse.Abstracts;
 
 namespace HTMLParse.SiteCollection;
 
-public class TassHTMLRead: INewsParse {
+public class TassHTMLRead: INewsParse, INewsProvider {
+    private string _url;
     private const string _searchDepthMinPage = "//html/body/div/div/div/div/div/div/div/div/a";
 
     private const string _searchDepthChildPageDate =
@@ -15,7 +17,11 @@ public class TassHTMLRead: INewsParse {
     private const string _searchDepthChildPageText =
         "//html/body/div/div/div/div/div/section/div/article/div/section/div/div/p";
 
-    public List<NewsItem> GetNews(string _url) {
+    public TassHTMLRead(string url) {
+        _url = url;
+    }
+
+    public List<NewsItem> GetNews() {
         ConcurrentBag<NewsItem> news = new ConcurrentBag<NewsItem>();
         HtmlWeb web = new HtmlWeb();
         HtmlDocument doc = web.Load(_url);
@@ -31,8 +37,10 @@ public class TassHTMLRead: INewsParse {
                         string innerText = link.InnerText;
 
                         var innerDoc = web.Load(href);
-                        var linksChildDate = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageDate).Last().InnerText;
-                        var linksChildText = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageText).First().InnerText;
+                        var linksChildDate = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageDate).Last()
+                            .InnerText;
+                        var linksChildText = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageText).First()
+                            .InnerText;
                         news.Add(
                             new NewsItem() {
                                 Title = innerText,
@@ -49,5 +57,9 @@ public class TassHTMLRead: INewsParse {
         }
 
         return news.ToList();
+    }
+
+    public Task<List<NewsItem>> GetNewsAsync<T>() where T : INewsProvider {
+        return Task.Run(GetNews);
     }
 }

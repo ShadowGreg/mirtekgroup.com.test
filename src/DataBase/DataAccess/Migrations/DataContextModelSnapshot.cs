@@ -44,7 +44,7 @@ namespace DataBase.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Partners");
+                    b.ToTable("News");
                 });
 #pragma warning restore 612, 618
         }

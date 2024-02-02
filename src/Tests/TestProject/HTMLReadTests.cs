@@ -10,10 +10,10 @@ public class HTMLReadTests {
     public void Fontanka_GetNews_ValidUrl_ReturnsListOfNewsItems() {
         // Arrange
         string url = "https://www.fontanka.ru/";
-        FontankaHTMLRead fontankaHtmlRead = new FontankaHTMLRead();
+        FontankaHTMLRead fontankaHtmlRead = new FontankaHTMLRead(url);
 
         // Act
-        var news = fontankaHtmlRead.GetNews(url);
+        var news = fontankaHtmlRead.GetNews();
 
         // Assert
         Assert.IsNotNull(news);
@@ -31,20 +31,20 @@ public class HTMLReadTests {
     public void Fontanka_GetNews_InvalidUrl_IsEmpty() {
         // Arrange
         string url = "https://www.fail.ru/";
-        INewsParse htmlRead = new FontankaHTMLRead();
+        INewsParse htmlRead = new FontankaHTMLRead(url);
 
         // Act & Assert
-        Assert.IsEmpty(htmlRead.GetNews(url));
+        Assert.IsEmpty(htmlRead.GetNews());
     }
 
     [Test]
     public void Tass_GetNews_ValidUrl_ReturnsListOfNewsItems() {
         // Arrange
         string url = "https://tass.ru/";
-        INewsParse htmlRead = new TassHTMLRead();
+        INewsParse htmlRead = new TassHTMLRead(url);
 
         // Act
-        var news = htmlRead.GetNews(url);
+        var news = htmlRead.GetNews();
 
         // Assert
         Assert.IsNotNull(news);
@@ -62,9 +62,9 @@ public class HTMLReadTests {
     public void Tass_GetNews_InvalidUrl_IsEmpty() {
         // Arrange
         string url = "https://www.fail.ru/";
-        INewsParse htmlRead = new TassHTMLRead();
+        INewsParse htmlRead = new TassHTMLRead(url);
 
         // Act & Assert
-        Assert.IsEmpty(htmlRead.GetNews(url));
+        Assert.IsEmpty(htmlRead.GetNews());
     }
 }
