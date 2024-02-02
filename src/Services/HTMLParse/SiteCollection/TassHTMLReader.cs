@@ -21,6 +21,7 @@ public class TassHTMLRead: INewsParse {
         HtmlDocument doc = web.Load(_url);
         var links = doc.DocumentNode.SelectNodes(_searchDepthMinPage);
         if (links != null) {
+            ///TODO переделать имплементацию для тасс
             Parallel.ForEach(links,
                 (link) =>
                 {
