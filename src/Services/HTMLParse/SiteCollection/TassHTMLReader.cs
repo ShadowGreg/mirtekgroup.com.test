@@ -6,7 +6,7 @@ using HTMLParse.Abstracts;
 
 namespace HTMLParse.SiteCollection;
 
-public class FontankaHTMLRead: INewsParse {
+public class TassHTMLRead: INewsParse {
     private const string _searchDepthMinPage = "//html/body/div/div/div/div/div/div/div/div/a";
 
     private const string _searchDepthChildPageDate =

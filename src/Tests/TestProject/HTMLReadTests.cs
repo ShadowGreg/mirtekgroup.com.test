@@ -11,10 +11,10 @@ public class HTMLReadTests {
     public void GetNews_ValidUrl_ReturnsListOfNewsItems() {
         // Arrange
         string url = "https://www.fontanka.ru/";
-        HTMLRead htmlRead = new HTMLRead();
+        FontankaHTMLRead fontankaHtmlRead = new FontankaHTMLRead();
 
         // Act
-        var news = htmlRead.GetNews(url);
+        var news = fontankaHtmlRead.GetNews(url);
 
         // Assert
         Assert.IsNotNull(news);
@@ -32,9 +32,9 @@ public class HTMLReadTests {
     public void GetNews_InvalidUrl_IsEmpty() {
         // Arrange
         string url = "https://www.fail.ru/";
-        HTMLRead htmlRead = new HTMLRead();
+        FontankaHTMLRead fontankaHtmlRead = new FontankaHTMLRead();
 
         // Act & Assert
-        Assert.IsEmpty(htmlRead.GetNews(url));
+        Assert.IsEmpty(fontankaHtmlRead.GetNews(url));
     }
 }
