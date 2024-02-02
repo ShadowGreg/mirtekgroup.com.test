@@ -1,12 +1,14 @@
 ﻿using System.Collections.Concurrent;
 using System.Text;
 using Entity;
+using Entity.Abstraction;
 using HtmlAgilityPack;
 using HTMLParse.Abstracts;
 
 namespace HTMLParse.SiteCollection;
 
-public class FontankaHTMLRead: INewsParse {
+public class FontankaHTMLRead: INewsParse, INewsProvider {
+    private string _url;
     private const string _searchDepthMinPage = "//html/body/div/div/div/div/div/div/div/div/a";
 
     private const string _searchDepthChildPageDate =
@@ -15,10 +17,14 @@ public class FontankaHTMLRead: INewsParse {
     private const string _searchDepthChildPageText =
         "//html/body/div/div/div/div/div/section/div/article/div/section/div/div/p";
 
-    public List<NewsItem> GetNews(string url) {
+    public FontankaHTMLRead(string url) {
+        _url = url;
+    }
+
+    public List<NewsItem> GetNews() {
         ConcurrentBag<NewsItem> news = new ConcurrentBag<NewsItem>();
         HtmlWeb web = new HtmlWeb();
-        HtmlDocument doc = web.Load(url);
+        HtmlDocument doc = web.Load(_url);
         var links = doc.DocumentNode.SelectNodes(_searchDepthMinPage);
         if (links != null) {
             Parallel.ForEach(links,
@@ -26,12 +32,14 @@ public class FontankaHTMLRead: INewsParse {
                 {
                     try {
                         var temp = link.GetClasses();
-                        string href = new StringBuilder(url + link.GetAttributeValue("href", "")).ToString();
+                        string href = new StringBuilder(_url + link.GetAttributeValue("href", "")).ToString();
                         string innerText = link.InnerText;
 
                         var innerDoc = web.Load(href);
-                        var linksChildDate = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageDate).Last().InnerText;
-                        var linksChildText = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageText).First().InnerText;
+                        var linksChildDate = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageDate).Last()
+                            .InnerText;
+                        var linksChildText = innerDoc.DocumentNode.SelectNodes(_searchDepthChildPageText).First()
+                            .InnerText;
                         news.Add(
                             new NewsItem() {
                                 Title = innerText,
@@ -48,5 +56,9 @@ public class FontankaHTMLRead: INewsParse {
         }
 
         return news.ToList();
+    }
+
+    public async Task<List<NewsItem>> GetNewsAsync<T>() where T : INewsProvider {
+        return await Task.Run(GetNews);
     }
 }

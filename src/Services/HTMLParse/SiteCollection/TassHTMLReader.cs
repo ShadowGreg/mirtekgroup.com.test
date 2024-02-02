@@ -15,10 +15,10 @@ public class TassHTMLRead: INewsParse {
     private const string _searchDepthChildPageText =
         "//html/body/div/div/div/div/div/section/div/article/div/section/div/div/p";
 
-    public List<NewsItem> GetNews(string url) {
+    public List<NewsItem> GetNews(string _url) {
         ConcurrentBag<NewsItem> news = new ConcurrentBag<NewsItem>();
         HtmlWeb web = new HtmlWeb();
-        HtmlDocument doc = web.Load(url);
+        HtmlDocument doc = web.Load(_url);
         var links = doc.DocumentNode.SelectNodes(_searchDepthMinPage);
         if (links != null) {
             Parallel.ForEach(links,
@@ -26,7 +26,7 @@ public class TassHTMLRead: INewsParse {
                 {
                     try {
                         var temp = link.GetClasses();
-                        string href = new StringBuilder(url + link.GetAttributeValue("href", "")).ToString();
+                        string href = new StringBuilder(_url + link.GetAttributeValue("href", "")).ToString();
                         string innerText = link.InnerText;
 
                         var innerDoc = web.Load(href);

@@ -3,5 +3,5 @@
 namespace HTMLParse.Abstracts;
 
 public interface INewsParse {
-    public List<NewsItem> GetNews(string url);
+    public List<NewsItem> GetNews();
 }
