@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataBase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "src\App\WebApp\WebApp.csproj", "{2486F09C-D53B-4240-8D04-8512C4F78AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLParse", "src\Services\HTMLParse\HTMLParse.csproj", "{6D4CF058-AADB-4D72-BEAC-2476DB0D5A76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{2486F09C-D53B-4240-8D04-8512C4F78AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2486F09C-D53B-4240-8D04-8512C4F78AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2486F09C-D53B-4240-8D04-8512C4F78AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4CF058-AADB-4D72-BEAC-2476DB0D5A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4CF058-AADB-4D72-BEAC-2476DB0D5A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4CF058-AADB-4D72-BEAC-2476DB0D5A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4CF058-AADB-4D72-BEAC-2476DB0D5A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
