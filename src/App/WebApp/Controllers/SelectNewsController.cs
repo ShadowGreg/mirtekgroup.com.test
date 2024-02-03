@@ -20,8 +20,12 @@ public class SelectNewsController: ControllerBase {
         return Ok(response);
     }
 
-    [HttpGet("SelectByText")]
+    [HttpPost("EnterText")]
     public async Task<ActionResult<List<NewsEntity>>> GetNews(SelectEntity selections) {
+        // var selections = new SelectEntity() {
+        //     HeadText = head ?? "",
+        //     MainText = text ?? ""
+        // };
         var response = await _newsRepository.GetNewsByTextAsync(selections);
         return Ok(response);
     }
