@@ -4,16 +4,16 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace DataBase.Migrations
+namespace WebApp.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Partners",
+                name: "News",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -25,15 +25,21 @@ namespace DataBase.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Partners", x => x.Id);
+                    table.PrimaryKey("PK_News", x => x.Id);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_News_Title",
+                table: "News",
+                column: "Title",
+                unique: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Partners");
+                name: "News");
         }
     }
 }

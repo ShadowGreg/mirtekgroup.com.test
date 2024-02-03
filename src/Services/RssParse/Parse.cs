@@ -22,12 +22,12 @@ public class Parse: IParser, INewsProvider {
                     Title = post.Title.Text ?? "",
                     UrlSlug = post.Links.First().ToString() ?? "",
                     Description = post.Summary.Text ?? "",
-                    CreatedDate = post.PublishDate.DateTime
+                    CreatedDate = post.PublishDate.ToString()
                 };
                 news.Add(newPost);
             }
             catch (Exception e) {
-                throw new Exception(e.Message);
+                Console.WriteLine(e.Message);
             }
         }
 

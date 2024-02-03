@@ -19,6 +19,7 @@ public class DataContext: DbContext {
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
         optionsBuilder.UseNpgsql(
-            @"Server=147.45.107.184;Port=5432;Database=default_db;User Id=gen_user;Password=\\MoqZ0_EY)3{u;");
+            "Server=192.168.50.40;Port=5432;Database=default_db;User Id=postgres;Password=example;",
+            b => b.MigrationsAssembly("WebApp"));
     }
 }

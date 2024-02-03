@@ -49,12 +49,12 @@ namespace Entity.Tests {
         [Test]
         public void NewsItem_CreatedDate_SetAndGetCorrectly() {
             // Arrange
-            DateTime? expectedCreatedDate = new DateTime(2022, 1, 1);
+            string expectedCreatedDate = new DateTime(2022, 1, 1).ToString();
             NewsItem newsItem = new NewsItem();
 
             // Act
-            newsItem.CreatedDate = expectedCreatedDate;
-            DateTime? actualCreatedDate = newsItem.CreatedDate;
+            newsItem.CreatedDate = expectedCreatedDate.ToString();
+            string actualCreatedDate = newsItem.CreatedDate.ToString();
 
             // Assert
             Assert.AreEqual(expectedCreatedDate, actualCreatedDate);

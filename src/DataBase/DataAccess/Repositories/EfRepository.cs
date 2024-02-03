@@ -14,39 +14,14 @@ public class EfRepository<T>
         _dataContext = dataContext;
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync() {
-        var entities = await _dataContext.Set<T>().ToListAsync();
-
-        return entities;
-    }
-
-    public Task<T> GetByIdAsync(Guid id) {
+    public Task<IEnumerable<T>> GetAllAsync() {
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<T>> GetRangeByIdsAsync(List<Guid> ids) {
+    public Task<IEnumerable<T>> GetNewsByTextAsync(string searchingText) {
         throw new NotImplementedException();
     }
 
-    public Task<T> GetFirstWhere(Expression<Func<T, bool>> predicate) {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<T>> GetWhere(Expression<Func<T, bool>> predicate) {
-        throw new NotImplementedException();
-    }
-
-    public Task AddAsync(T entity) {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(T entity) {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(T entity) {
-        throw new NotImplementedException();
-    }
 
     // public async Task<T> GetByIdAsync(Guid id) {
     //     var entity = await _dataContext.Set<T>().FirstOrDefaultAsync(x => x.Id == id);

@@ -1,6 +1,6 @@
 ﻿namespace DataBase.Data;
 
-public class EfDbInitializer : IDbInitializer {
+public class EfDbInitializer: IDbInitializer {
     private readonly DataContext _dataContext;
 
     public EfDbInitializer(DataContext dataContext) {

@@ -45,7 +45,7 @@ public class FontankaHTMLRead: INewsParse, INewsProvider {
                                 Title = innerText,
                                 UrlSlug = href,
                                 Description = linksChildText,
-                                CreatedDate = DateTime.Parse(linksChildDate)
+                                CreatedDate = linksChildDate
                             }
                         );
                     }

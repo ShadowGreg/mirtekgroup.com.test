@@ -8,12 +8,8 @@ using RssParse;
 namespace ParseService;
 
 public class ParseService {
-    private DataContext _dataContext;
     private string _url = "";
 
-    public ParseService() {
-        _dataContext = new DataContext();
-    }
 
     public async Task Parse(string url) {
         _url = url;
@@ -30,25 +26,27 @@ public class ParseService {
                 break;
         }
 
-        try {
-            foreach (NewsItem news in newsItems) {
-                await _dataContext.News.AddAsync(new NewsEntity() {
+        foreach (NewsItem news in newsItems) {
+            try {
+                await using var _dataContext = new DataContext();
+                var maxId = _dataContext.News.Max(n => n.Id);
+                _dataContext.News.Add(new NewsEntity() {
+                    Id = ++maxId,
                     Title = news.Title,
                     UrlSlug = news.UrlSlug,
                     Description = news.Description,
-                    CreatedDate = news.CreatedDate,
+                    CreatedDate = news.CreatedDate.ToString(),
                 });
+                await _dataContext.SaveChangesAsync();
             }
-        }
-        catch (Exception e) {
-            Console.WriteLine(e);
-            throw;
+            catch (Exception e) {
+                Console.WriteLine(e);
+            }
         }
     }
 
     public async Task<List<NewsItem>> GetNewsTass() {
         try {
-            await Task.Delay(34_400_000);
             return await new TassHTMLRead(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {
@@ -59,7 +57,6 @@ public class ParseService {
 
     public async Task<List<NewsItem>> GetNewsFontanka() {
         try {
-            await Task.Delay(34_400_000);
             return await new FontankaHTMLRead(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {
@@ -70,7 +67,6 @@ public class ParseService {
 
     public async Task<List<NewsItem>> GetNewsRSS() {
         try {
-            await Task.Delay(34_400_000);
             return await new Parse(_url).GetNewsAsync<TassHTMLRead>();
         }
         catch (Exception e) {

@@ -5,25 +5,21 @@ namespace WebApp.Controllers;
 [ApiController]
 [Route("[controller]")]
 public class ParseController: ControllerBase {
-    private CancellationToken cancellationToken = new CancellationToken();
     private bool _stop = false;
-    
+
     [HttpOptions("Start")]
     public async Task StartAsync(string url) {
+        ParseService.ParseService parseService = new ParseService.ParseService();
         while (!_stop) {
-            foreach (var data in mailData) {
-                bool isEmailSent = await _mailService.SendAsync(data);
-                Console.WriteLine($"Email sent: {isEmailSent} at {DateTime.Now}");
-            }
+            await parseService.Parse(url);
+            Console.WriteLine($"Parse start at {DateTime.Now}");
         }
     }
-    
+
     [HttpOptions("Stop")]
-    public async Task StopAsync() {
+    public Task StopAsync() {
         _stop = true;
-        Console.WriteLine("Stopping RabbitMQ listener...");
-        _rabbitMqListener.Dispose();
+        Console.WriteLine("Stopping parse...");
+        return Task.CompletedTask;
     }
-
-
 }
